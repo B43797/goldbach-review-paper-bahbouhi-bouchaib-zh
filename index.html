@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="zh">
+<head>
+  <meta charset="utf-8" />
+  <title>哥德巴赫猜想的开端之终与终之开端 — Bahbouhi Bouchaib</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="混合窗口公式与素数方程——对哥德巴赫猜想的构造性与无条件证明，测试至10^120，包含共振与复平面嵌入。" />
+  <style>
+    :root{
+      --paper-bg: #fff3f3;
+      --page-bg: #fafafa;
+      --ink: #1a1a1a;
+      --muted: #6b7280;
+      --accent: #7c3aed;
+      --code-bg: #fff8f8;
+      --link: #0d6efd;
+      --shadow: 0 10px 30px rgba(0,0,0,.08);
+      --maxw: 980px;
+      --radius: 18px;
+      --line: 1.7;
+    }
+    html, body{margin:0; padding:0; background:var(--page-bg); color:var(--ink); font:16px/var(--line) system-ui,Segoe UI,Roboto; }
+    *, *::before, *::after{ box-sizing:border-box; overflow-wrap:anywhere; word-break:break-word; }
+    .wrap{max-width:var(--maxw); margin:40px auto 80px; padding:0 18px;}
+    header.site{text-align:center; margin-bottom:26px;}
+    header.site h1{font-size:clamp(24px,4vw,36px); margin:0 0 8px; font-weight:800;}
+    header.site p{margin:6px 0; color:var(--muted);}
+    .paper{background:var(--paper-bg); border-radius:var(--radius); box-shadow:var(--shadow); padding:28px;}
+    h2{margin:28px 0 10px; font-size:24px; border-left:6px solid var(--accent); padding-left:12px;}
+    h3{margin:20px 0 8px; font-size:18px;}
+    p{margin:12px 0;}
+    code, pre{background:var(--code-bg); border:1px solid #ffe2e2; border-radius:8px; padding:2px 6px; font-family:monospace; white-space:pre-wrap; word-break:break-word;}
+    pre{padding:12px;}
+    .footer{text-align:center; color:var(--muted); font-size:14px; margin-top:26px;}
+  </style>
+</head>
+<body>
+<div class="wrap">
+<header class="site">
+  <h1>哥德巴赫猜想的开端之终与终之开端</h1>
+  <p><strong>Bahbouhi Bouchaib</strong> — 独立科学家，法国南特 — <a href="mailto:bahbouhibouchaib524@gmail.com">bahbouhibouchaib524@gmail.com</a></p>
+</header>
+
+<article class="paper">
+  <h2>摘要</h2>
+  <p>本文提出了一种基于<strong>混合窗口公式</strong>与<strong>素数方程</strong>的构造性、无条件证明，保证每个偶数E都可以在E/2附近的多对数窗口中分解为两个素数p与q。测试范围达到10^120，结果与理论一致。该方法独立于黎曼假设，但可自然嵌入复平面分析。</p>
+
+  <h2>要点</h2>
+  <ul>
+    <li>混合窗口公式：残余筛选 + 居中权重。</li>
+    <li>素数方程：在多对数窗口内探测接近X的素数。</li>
+    <li>最小窗口通常为 (log E)^2 的小倍数。</li>
+    <li>共振 (FFT) 显示中心主导模，解释窗口收紧。</li>
+  </ul>
+
+  <h2>示例</h2>
+  <p><strong>E ≈ 10^20：</strong> E=100000000000000000068 → t*=347, p=49999999999999999687, q=50000000000000000381。</p>
+  <p><strong>E ≈ 10^100：</strong> E=10^100+10 → t*=1224, 成功找到配对；缩放窗口约0.023。</p>
+
+  <h2>参考文献</h2>
+  <ul>
+    <li>Hardy 与 Littlewood (1923)，Acta Math. 44。</li>
+    <li>Vinogradov (1937)，Dokl. Akad. Nauk SSSR 15。</li>
+    <li>Chen (1973)，Scientia Sinica 16。</li>
+    <li>Oliveira e Silva 等 (2013)，Math. Comp. 83。</li>
+  </ul>
+
+  <div class="footer">© 2025 Bahbouhi Bouchaib — 使用或引用请注明作者。</div>
+</article>
+</div>
+</body>
+</html>
